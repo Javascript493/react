@@ -23,6 +23,9 @@ width: auto;
     text-align: center;
     width: 34px;
 }
+.square.light {
+  color: red;
+}
 .board-row::after {
   clear: both;
   content: '';
