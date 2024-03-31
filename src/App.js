@@ -3,12 +3,15 @@ import { useState } from 'react'
 // import './components/demo.css'
 // import Demo from './components/demo3'
 // import Game from './components/game'
-import Demo from './components/3-30/demo3/index3'
+// import Demo from './components/3-30/demo3/index3'
+import Demo from './components/3-31/index2'
 
 function App() {
   return (
     <div className="App">
-      <Demo></Demo>
+      <Demo stories={[{id:1, label:'hh'}]}></Demo>
+      <Demo stories={[{id:1, label:'hh'}]}></Demo>
+      <Demo stories={[{id:1, label:'hh'}]}></Demo>
     </div>
   );
 }
