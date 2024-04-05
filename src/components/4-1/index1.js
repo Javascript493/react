@@ -3,20 +3,27 @@ function PlayButton () {
   const handlPlay =() => {
     alert('放电影')
   }
-  return <button onClick={handlPlay}>
+  return <Button onClick={handlPlay}>
     播放电影
-  </button>
+  </Button>
 }
 function MusicButton (){
   const handlPlay = () => {
     alert('放音乐')
   }
-  return <button onClick={handlPlay}>
+  return <Button onClick={handlPlay}>
     播放音乐
-  </button>
+  </Button>
 }
 export default function Demo() {
-  return <div>
+  const handleClick = () => {
+    alert('父级')
+  }
+  return <div style={{
+    width: '100vh',
+    height: '80px',
+    backgroundColor: 'red'
+  }} onClickCapture={handleClick}>
     <PlayButton/>
     <MusicButton/>
   </div>
